@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samus Car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="CSS/css/style.css">
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <a href="index.html"><img src="Imagenes/logo.png" class="img-fluid" alt="Responsive image"></a>
+        <div class="container-fluid">
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <a class="navbar-brand">Samus Car</a>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            CSS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">
+                                    <span class="es">Mapa imagenes sin map</span>
+                                    <span class="en">Images map</span>
+                                </a></li>
+                            <li><a class="dropdown-item" href="mapaImagenesMap.html">Mapa imagenes con map</a></li>
+                            <li><a class="dropdown-item" href="mapaImagenesNoMap.html">Mapa imagenes sin map</a></li>
+                            <li><a class="dropdown-item" href="sprite.html">Animacion sprite</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Bootstrap
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Bootstrap\formulario.html">Formulario</a></li>
+                            <li><a class="dropdown-item" href="Bootstrap\tabla.html">Tabla</a></li>
+                            <li><a class="dropdown-item" href="Bootstrap\cards.html">Cards</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Framework
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Framework/horizontalCards.html">Horizontal cards</a></li>
+                            <li><a class="dropdown-item" href="Framework/tablaTailwind.html">Tabla</a></li>
+                            <li><a class="dropdown-item" href="Framework/multimediaTailwind.html">Multimedia</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </nav>
+    <ul class="breadcrumb">
+        <li><a href="index.html">Inicio</a></li>
+        <li>CSS</li>
+        <li>Mapa imagenes con map</li>
+    
+      </ul>
+
+
+    <div>
+    <img src="Imagenes/mapaCoches.png" usemap="#mapaImagen" class="mapa">
+
+    <map name="mapaImagen">
+        <area title="ferrari"
+            coords="88,223,104,222,138,223,167,223,205,223,244,226,254,228,253,250,254,264,253,298,253,341,253,374,253,401,253,422,254,454,253,477,252,493,234,495,208,495,167,493,133,493,88,495,86,443,87,401,90,352,86,309,87,250,87,235"
+            shape="poly">
+        <area title="porsche"
+            coords="404,254,425,246,471,236,503,236,527,234,568,241,585,247,592,258,593,257,592,275,592,295,594,307,593,334,595,358,593,379,582,414,569,430,564,440,553,452,543,461,528,472,510,478,497,479,483,475,465,467,448,451,430,431,416,404,406,377,405,331,405,284"
+            shape="poly">
+        <area title="dodge "
+            coords="697,245,723,239,762,237,806,237,858,237,899,239,922,246,928,261,931,288,931,310,931,341,930,370,926,408,918,427,908,441,893,453,876,463,863,471,841,484,819,497,810,499,795,496,778,482,760,473,744,466,725,455,712,441,697,426,689,379,687,338,687,293,687,254"
+            shape="poly">
+        <area title="lamborghini"
+            coords="1020,264,1038,256,1066,250,1096,246,1128,244,1157,246,1179,248,1209,255,1227,264,1232,269,1233,286,1230,298,1229,325,1223,341,1220,362,1211,382,1204,402,1192,413,1183,427,1168,445,1156,456,1134,473,1120,473,1102,463,1080,444,1058,418,1032,370,1017,306,1013,273"
+            shape="poly">
+       
+    </map>
+    </div>
+</body>
+
+
+<!--footer-->
+
+<footer class="bg-light text-center text-lg-start">
+
+    <div class="container p-4 ">
+
+        <div class="row">
+
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 ">
+
+
+
+            </div>
+
+
+
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 ">
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="text-center p-3 bg-black text-white">
+        © Samuel Bonet González
+
+    </div>
+
+</footer>
+
+
+</html>

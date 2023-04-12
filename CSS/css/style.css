@@ -1,0 +1,181 @@
+/*INDEX*/
+
+
+/*IMAGENES INDEX*/
+.photo-gallery {
+	color:#313437;
+	background-color:#fff;
+  }
+  
+  .photo-gallery p {
+	color:#7d8285;
+  }
+  
+  .photo-gallery h2 {
+	font-weight:bold;
+	margin-bottom:40px;
+	padding-top:40px;
+	color:inherit;
+  }
+  
+  @media (max-width:767px) {
+	.photo-gallery h2 {
+	  margin-bottom:25px;
+	  padding-top:25px;
+	  font-size:24px;
+	}
+  }
+  
+  .photo-gallery .intro {
+	font-size:16px;
+	max-width:500px;
+	margin:0 auto 40px;
+  }
+  
+  .photo-gallery .intro p {
+	margin-bottom:0;
+  }
+  
+  .photo-gallery .photos {
+	padding-bottom:20px;
+  }
+  
+  .photo-gallery .item {
+	padding-bottom:30px;
+  }
+  
+
+/*IDIOMAS INDEX*/
+.es,.en{
+  display: none;
+}
+#checkbox-es:checked ~ .container-fluid .es{
+  display: inline;
+}
+#checkbox-en:checked ~ .container-fluid .en{
+	display: inline;
+}
+#checkbox-es {
+	position: absolute;
+	top: 24px;
+	right: 69px;
+}
+#checkbox-es ~ span {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+}
+#checkbox-en {
+	position: absolute;
+	top: 24px;
+	right: 27px;
+}
+#checkbox-en ~ span {
+	position: absolute;
+	top: 20px; 
+	right: 5px;
+}
+
+
+/*SPRITE*/
+
+body{
+	padding: 0;
+	margin: 0;
+ }
+.car-contenedor{
+	display: flex;
+	justify-content: center;
+	padding: 75px 0;
+}
+
+.car{
+	width:60%;
+	overflow: hidden;
+
+
+}
+.car img {
+	width: 400%;
+	animation: animate .5s steps(4) infinite;
+}
+ @keyframes animate{
+	from{
+		margin-left: 0;
+	}
+	to{
+		margin-left: -400%;
+	}
+ }
+
+
+
+/*MAPA IMAGENES MAPA*/
+
+.mapa {
+
+
+    margin-left: 140px;
+    margin-top: 10px;
+	max-width: 100%;
+
+}
+
+
+
+
+
+
+/*MAPA IMAGENES NO MAPA*/ 
+
+
+#contenedor{
+    width: 100px;
+    height: 480px;
+    background-image: url('../../Imagenes/mapaMarcasNoMap.png');    
+    position: relative;
+    margin: 10px auto; padding: 0;
+    width: 500px;    
+    border-radius: 10px;
+    margin: 10px auto;
+    margin-top: 85px;
+       
+}  
+#coches li {margin: 0; padding: 0; list-style: none; display: block; position: absolute;}  
+
+#bmw {left: 10px;top: 30px;width: 223px;height: 230px;}
+#skoda {left: 250px;top: 260px;width: 227px;height: 210px;}
+#fiat {left: 12px;top: 260px;width: 223px;height: 210px;}
+#alfa {left: 250px;top: 32px;width: 240px;height: 235px;}
+
+
+#bmw:hover {background: url('../../Imagenes/mapaMarcasNoMap.png') -18px -470px  no-repeat;}
+#skoda:hover {background: url('../../Imagenes/mapaMarcasNoMap.png') -250px -705px no-repeat;}
+#fiat:hover {background: url('../../Imagenes/mapaMarcasNoMap.png') -12px -700px no-repeat;}
+#alfa:hover {background: url('../../Imagenes/mapaMarcasNoMap.png') -250px -470px no-repeat;}
+
+
+
+/*BREADCRUMB*/
+ul.breadcrumb {
+	padding: 10px 16px;
+	list-style: none;
+	background-color: #eee;
+  }
+  ul.breadcrumb li {
+	display: inline;
+	font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+	padding: 8px;
+	color: black;
+	content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+	color: #0275d8;
+	text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+	color: #01447e;
+	text-decoration: underline;
+  }

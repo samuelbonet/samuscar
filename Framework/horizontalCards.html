@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                fontFamily: {
+                    sans: ["Roboto", "sans-serif"],
+                    body: ["Roboto", "sans-serif"],
+                    mono: ["ui-monospace", "monospace"],
+                },
+            },
+        };
+
+    </script>
+
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <nav class="relative flex w-full items-center justify-between bg-neutral-50 py-2 text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-300 dark:shadow-black/5 lg:flex-wrap lg:justify-start"
+        data-te-navbar-ref>
+        <div class="px-6">
+            <button
+                class="border-0 bg-transparent py-3 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+                type="button" data-te-collapse-init data-te-target="#navbarSupportedContentX"
+                aria-controls="navbarSupportedContentX" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="[&>svg]:w-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="h-8 w-8">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </span>
+            </button>
+            <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+                id="navbarSupportedContentX" data-te-collapse-item>
+                <ul class="mr-auto flex flex-row" data-te-navbar-nav-ref>
+                    <li data-te-nav-item-ref>
+                        <div class="flex font-bold text-xl">
+                            <a href="../index.html"><img src="../Imagenes/logo.png" class="img-fluid" alt="Responsive image" ></a>
+                            <a class="block py-2 pr-2  transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:px-2"
+                                data-te-ripple-init data-te-ripple-color="light">Samus Car</a>
+                        </div>
+                    </li>
+
+                    <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                        <a class="flex items-center whitespace-nowrap py-2 pr-2  transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:px-2"
+                            href="#" data-te-ripple-init data-te-ripple-color="light" type="button"
+                            id="dropdownMenuButtonX" data-te-dropdown-toggle-ref aria-expanded="false"
+                            data-te-nav-link-ref>CSS
+                            <span class="ml-2 w-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="h-5 w-5">
+                                    <path fill-rule="evenodd"
+                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="absolute  top-full z-[1000] mt-0 hidden  border-none bg-white bg-clip-padding text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+                            aria-labelledby="dropdownMenuButtonX" data-te-dropdown-menu-ref>
+                            <div class="px-6 py-5 lg:px-8">
+                                <div>
+                                    <a href="../mapaImagenesMap.html" aria-current="true"
+                                        class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                                        Mapa imagenes con map</a>
+
+                                </div>
+                                <div>
+                                    <a href="../mapaImagenesNoMap.html" aria-current="true"
+                                        class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                                        Mapa imagenes sin map</a>
+
+                                </div>
+                                <div>
+                                    <a href="../sprite.html" aria-current="true"
+                                        class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                                        Animacion Sprite</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                        <a class="flex items-center whitespace-nowrap py-2 pr-2  transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:px-2"
+                            href="#" data-te-ripple-init data-te-ripple-color="light" type="button"
+                            id="dropdownMenuButtonX" data-te-dropdown-toggle-ref aria-expanded="false"
+                            data-te-nav-link-ref>Bootstrap
+                            <span class="ml-2 w-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="h-5 w-5">
+                                    <path fill-rule="evenodd"
+                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="absolute  top-full z-[1000] mt-0 hidden  border-none bg-white bg-clip-padding text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+                            aria-labelledby="dropdownMenuButtonX" data-te-dropdown-menu-ref>
+                            <div class="px-6 py-5 lg:px-8">
+                                <div>
+                                    <a href="../Bootstrap/formulario.html" aria-current="true"
+                                        class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                                        Formulario</a>
+
+                                </div>
+                                <div>
+                                    <a href="../Bootstrap/tabla.html" aria-current="true"
+                                        class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                                        Tabla</a>
+
+                                </div>
+                                <div>
+                                    <a href="../Bootstrap/cards.html" aria-current="true"
+                                        class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                                        Cards</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                        <a class="flex items-center whitespace-nowrap py-2 pr-2  transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:px-2"
+                            href="#" data-te-ripple-init data-te-ripple-color="light" type="button"
+                            id="dropdownMenuButtonX" data-te-dropdown-toggle-ref aria-expanded="false"
+                            data-te-nav-link-ref>Framework
+                            <span class="ml-2 w-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="h-5 w-5">
+                                    <path fill-rule="evenodd"
+                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="absolute  top-full z-[1000] mt-0 hidden  border-none bg-white bg-clip-padding text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+                            aria-labelledby="dropdownMenuButtonX" data-te-dropdown-menu-ref>
+                            <div class="px-6 py-5 lg:px-8">
+                                <div>
+                                    <a href="horizontalCards.html" aria-current="true"
+                                        class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                                        Horizontal Cards</a>
+
+                                </div>
+                                <div>
+                                    <a href="tablaTailwind.html" aria-current="true"
+                                        class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                                        Tabla</a>
+
+                                </div>
+                                <div>
+                                    <a href="multimediaTailwind.html" aria-current="true"
+                                        class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                                        Multimedia</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav
+    class="w-full rounded-md bg-neutral-100 px-5 py-3 dark:bg-neutral-600">
+    <ol class="list-reset flex">
+      <li>
+        <a
+          href="../index.html"
+          class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+          >Inicio</a
+        >
+      </li>
+      <li>
+        <span class="mx-2 text-neutral-500 dark:text-neutral-300">/</span>
+      </li>
+      <li class="text-neutral-500 dark:text-neutral-300">Framework</li>
+      <li>
+        <span class="mx-2 text-neutral-500 dark:text-neutral-300">/</span>
+      </li>
+      <li class="text-neutral-500 dark:text-neutral-300">Horizontal Cards</li>
+    </ol>
+  </nav>
+
+
+
+
+    <!--horizontal cards-->
+
+    <div class="container py-12 mx-auto">
+        <div class="flex justify-center mb-6 w-full">
+            <div class="flex flex-col rounded-lg bg-white shadow-lg dark:bg-neutral-700 md:max-w-xl md:flex-row">
+                <img class="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                    src="../Imagenes/car-4148514_1280.jpg" alt="" />
+                <div class="flex flex-col justify-start p-6">
+                    <h5 class="mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50">
+                        Mini Cooper
+                    </h5>
+                    <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                        Pequeño automóvil producido por la British Motor Corporation.Este automóvil,es el más popular de
+                        los
+                        fabricados en Gran Bretaña, siendo remplazado por el nuevo MINI, lanzado en 2001.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center mb-6">
+            <div class="flex flex-col rounded-lg bg-white shadow-lg dark:bg-neutral-700 md:max-w-xl md:flex-row">
+                <img class="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                    src="../Imagenes/sport-4155825_1280.jpg" alt="" />
+                <div class="flex flex-col justify-start p-6">
+                    <h5 class="mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50">
+                        Chevrolet Camaro
+                    </h5>
+                    <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                        Automóvil deportivo de dos puertas, con motor delantero y de tracción trasera,
+                        producido por el fabricante Chevrolet, división de General Motors (GM) desde 1966.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+
+<!--footer-->
+
+<footer class="bg-light text-center text-lg-start fixed bottom-0 w-full">
+   
+    <div class="container p-4 ">
+     
+        <div class="row">
+          
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 ">
+
+
+
+            </div>
+           
+
+           
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 ">
+
+
+
+            </div>
+           
+        </div>
+        
+    </div>
+   
+
+    
+    <div class="text-center p-3 bg-black text-white" >
+        © Samuel Bonet González
+
+    </div>
+    
+</footer>
+
+</html>

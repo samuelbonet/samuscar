@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        fontFamily: {
+          sans: ["Roboto", "sans-serif"],
+          body: ["Roboto", "sans-serif"],
+          mono: ["ui-monospace", "monospace"],
+        },
+      },
+    };
+
+  </script>
+
+</head>
+
+<body>
+  <!--Barra de navegación-->
+  <nav
+    class="relative flex w-full items-center justify-between bg-neutral-50 py-2 text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-300 dark:shadow-black/5 lg:flex-wrap lg:justify-start"
+    data-te-navbar-ref>
+    <div class="px-6">
+      <button
+        class="border-0 bg-transparent py-3 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+        type="button" data-te-collapse-init data-te-target="#navbarSupportedContentX"
+        aria-controls="navbarSupportedContentX" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="[&>svg]:w-8">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="h-8 w-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </span>
+      </button>
+      <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+        id="navbarSupportedContentX" data-te-collapse-item>
+        <ul class="mr-auto flex flex-row" data-te-navbar-nav-ref>
+          <li data-te-nav-item-ref>
+            <div class="flex font-bold text-xl">
+              <a href="../index.html"><img src="../Imagenes/logo.png" class="img-fluid" alt="Responsive image" ></a>
+              <a class="block py-2 pr-2  transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:px-2"
+           data-te-ripple-init data-te-ripple-color="light">Samus Car</a>
+            </div>
+          </li>
+
+          <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+            <a class="flex items-center whitespace-nowrap py-2 pr-2  transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:px-2"
+              href="#" data-te-ripple-init data-te-ripple-color="light" type="button" id="dropdownMenuButtonX"
+              data-te-dropdown-toggle-ref aria-expanded="false" data-te-nav-link-ref>CSS
+              <span class="ml-2 w-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                  <path fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+            </a>
+            <div
+              class="absolute  top-full z-[1000] mt-0 hidden  border-none bg-white bg-clip-padding text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+              aria-labelledby="dropdownMenuButtonX" data-te-dropdown-menu-ref>
+              <div class="px-6 py-5 lg:px-8">
+                <div>
+                  <a href="../mapaImagenesMap.html" aria-current="true"
+                    class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                    Mapa imagenes con map</a>
+
+                </div>
+                <div>
+                  <a href="../mapaImagenesNoMap.html" aria-current="true"
+                    class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                    Mapa imagenes sin map</a>
+
+                </div>
+                <div>
+                  <a href="../sprite.html" aria-current="true"
+                    class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                    Animacion Sprite</a>
+
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+            <a class="flex items-center whitespace-nowrap py-2 pr-2  transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:px-2"
+              href="#" data-te-ripple-init data-te-ripple-color="light" type="button" id="dropdownMenuButtonX"
+              data-te-dropdown-toggle-ref aria-expanded="false" data-te-nav-link-ref>Bootstrap
+              <span class="ml-2 w-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                  <path fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+            </a>
+            <div
+              class="absolute  top-full z-[1000] mt-0 hidden  border-none bg-white bg-clip-padding text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+              aria-labelledby="dropdownMenuButtonX" data-te-dropdown-menu-ref>
+              <div class="px-6 py-5 lg:px-8">
+                <div>
+                  <a href="../Bootstrap/formulario.html" aria-current="true"
+                    class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                    Formulario</a>
+
+                </div>
+                <div>
+                  <a href="../Bootstrap/tabla.html" aria-current="true"
+                    class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                    Tabla</a>
+
+                </div>
+                <div>
+                  <a href="../Bootstrap/cards.html" aria-current="true"
+                    class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                    Cards</a>
+
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+            <a class="flex items-center whitespace-nowrap py-2 pr-2  transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:px-2"
+              href="#" data-te-ripple-init data-te-ripple-color="light" type="button" id="dropdownMenuButtonX"
+              data-te-dropdown-toggle-ref aria-expanded="false" data-te-nav-link-ref>Framework
+              <span class="ml-2 w-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                  <path fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+            </a>
+            <div
+              class="absolute  top-full z-[1000] mt-0 hidden  border-none bg-white bg-clip-padding text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+              aria-labelledby="dropdownMenuButtonX" data-te-dropdown-menu-ref>
+              <div class="px-6 py-5 lg:px-8">
+                <div>
+                  <a href="horizontalCards.html" aria-current="true"
+                    class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                    Horizontal Cards</a>
+
+                </div>
+                <div>
+                  <a href="tablaTailwind.html" aria-current="true"
+                    class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                    Tabla</a>
+
+                </div>
+                <div>
+                  <a href="multimediaTailwind.html" aria-current="true"
+                    class="block w-fulls border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white">
+                    Multimedia</a>
+
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav
+  class="w-full rounded-md bg-neutral-100 px-5 py-3 dark:bg-neutral-600">
+  <ol class="list-reset flex">
+    <li>
+      <a
+        href="../index.html"
+        class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+        >Inicio</a
+      >
+    </li>
+    <li>
+      <span class="mx-2 text-neutral-500 dark:text-neutral-300">/</span>
+    </li>
+    <li class="text-neutral-500 dark:text-neutral-300">Framework</li>
+    <li>
+      <span class="mx-2 text-neutral-500 dark:text-neutral-300">/</span>
+    </li>
+    <li class="text-neutral-500 dark:text-neutral-300">Tabla Tailwind</li>
+  </ol>
+</nav>
+  <!--tabla-->
+  <div class="sm:container mx-auto p-12">
+    <div class="flex flex-col">
+      <div class="overflow-x-auto">
+        <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+          <div class="overflow-hidden">
+            <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+              <thead class="border-b font-medium dark:border-neutral-500">
+                <tr>
+                  <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                    #
+                  </th>
+                  <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                    Nombre
+                  </th>
+                  <th scope="col" class="border-r px-6 py-4 dark:border-neutral-500">
+                    Precio
+                  </th>
+                  <th scope="col" class="px-6 py-4">Valoración</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    1
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    Forza Horizon 4
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    80 €
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">8.9/10</td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    2
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    The Crew 2
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    10 €
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">7.7/10</td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    3
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    CarX Drift Racing Online
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    12.49 €
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">9.5/10</td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    4
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    Formula 1 2021
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    74.99 €
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">8.5/10</td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    5
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    SnowRunner
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    29.99 €
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">8.3/10</td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    6
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    Need for Speed Heat
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    70 €
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">7.8/10</td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    7
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    Car Mechanic Simulator
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    19.50 €
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">7.1/10</td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    8
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    Ride 4
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    49.99 €
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">7.6/10</td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    9
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    Dirt Rally 2.0
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    19.99 €
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">8.4/10</td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    10
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    Assetto Corsa Competizione
+                  </td>
+                  <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    39.99 €
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">8.3/10</td>
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+
+<!--footer-->
+
+<footer class="bg-light text-center text-lg-start fixed bottom-0 w-full">
+
+  <div class="container p-0">
+  
+    <div class="row">
+    
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0 ">
+
+
+
+      </div>
+    
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0 ">
+
+
+
+      </div>
+  
+    </div>
+
+  </div>
+  
+
+  <div class="text-center p-3 bg-black text-white">
+    © Samuel Bonet González
+
+  </div>
+ 
+</footer>
+
+</html>
